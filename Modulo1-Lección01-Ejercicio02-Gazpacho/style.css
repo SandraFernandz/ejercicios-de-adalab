@@ -1,4 +1,4 @@
-html{
+body{
     background-color:#f3f4f5;
 }
 h1{
@@ -9,6 +9,6 @@ h1{
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    background-color: #757575;
+    color: #757575;
 
 }
