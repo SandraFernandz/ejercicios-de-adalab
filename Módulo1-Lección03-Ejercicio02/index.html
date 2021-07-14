@@ -9,26 +9,20 @@
     <style>
     #enlinea{
         background-color: rgb(195, 16, 195);
-        height: 100px;
-        width: 100px;
         display: inline;
     }
 
     #enlineasinespacio{
         background-color: rgb(13, 193, 217);
-        height: 100px;
-        width: 100px;
         display: inline;
     }
 
-    #enbloque{
+    .enbloque{
         background-color: salmon;
-        height: 100px;
-        width: 100px;
         display: block;
     }
     #enlineblock{
-        background-color: rgb(9, 74, 83);
+        background-color: rgb(123, 170, 176);
         height: 100px;
         width: 100px;
         display: inline-block;
@@ -39,36 +33,33 @@
   <body>
     <h3>Efecto en Línea</h3>
     <div id="enlinea">
-        <span>Div Inline</span>
-        <span>Div Inline</span>
-        <span>Div Inline</span>
+        <span>En linea Inline</span>
+        <span>En linea Inline</span>
+        <span>En linea Inline</span>
     </div>
     
     <h3>Efecto en linea sin espacio entre ellos html</h3>
     <div id="enlineasinespacio"><span>Div Inline<span><span>Div Inline</span><span>Div Inline</span></div> 
       
     <h3>Efecto en Bloque</h3>
-    <div id="enbloque">
+    <div class="enbloque">
       <P>elemento bloque</P>
       <P>elemento bloque</P>
-      <P>elemento bloque</P>
-        
-    <div>
+      <P>elemento bloque</P> 
+    </div>
 
     <h3>Efecto en InlineBlock</h3>
-    <div id="enlineblock">
-        <span>Inline Block</span>
-        <span>Inline Block</span>
-        <span>Inline Block</span>
-        <span>Inline Block</span>
-        <span>Inline Block</span>
-        <span>Inline Block</span>
-        <span>Inline Block</span>
+    /*atención el id va en cada párrafo!!!*/
+    <div>
+        <p id="enlineblock">Inline Block</p>
+        <p id="enlineblock">Inline Block</p>
+        <p id="enlineblock">Inline Block</p>
+        <p id="enlineblock">Inline Block</p>
+        <p id="enlineblock">Inline Block</p>
+        <p id="enlineblock">Inline Block</p>
+        <p id="enlineblock">Inline Block</p>
 </div>
-        <h3>Efecto en Línea sin espacio entre ellos</h3>
-        
-        <div>
-          <span>Elemento inline</span><span>Elemento inline</span><span>Elemento inline<span><span>Elemento inline<span><span>Elemento inline<span><span>Elemento inline<span><span>Elemento inline<span><span>Elemento inline<span><span>Elemento inline</span>
-        </div>
+
+
   </body>
 </html>
