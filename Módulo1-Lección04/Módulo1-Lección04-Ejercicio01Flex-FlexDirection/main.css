@@ -1,0 +1,26 @@
+.container1 {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+}
+.item1 {
+  box-sizing: border-box;
+  border: 2px solid #666;
+  background-color: violet;
+}
+
+.container2 {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: orange;
+}
+.item2 {
+  box-sizing: border-box;
+  border: 2px solid #616;
+  background-color: paleturquoise;
+}

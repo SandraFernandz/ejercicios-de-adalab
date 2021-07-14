@@ -1,0 +1,12 @@
+.container1 {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(205, 192, 255);
+  }
+  .item1 {
+    box-sizing: border-box;
+    border: 2px solid #666;
+    width: 200px;
+    height: 100px;
+    background-color: violet;
