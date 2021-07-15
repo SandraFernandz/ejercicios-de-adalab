@@ -1,0 +1,11 @@
+.header {
+  background: violet;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+#title {
+  color: rrgb(57, 39, 6)0, 119, 116);
+  left: 20px;
+  text-align: center;
+}
