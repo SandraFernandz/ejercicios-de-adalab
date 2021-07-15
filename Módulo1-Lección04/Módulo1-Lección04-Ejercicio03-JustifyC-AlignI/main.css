@@ -2,7 +2,7 @@
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid grey;
 }
@@ -10,4 +10,11 @@
 .item1 {
   width: 80px;
   border: 2px solid black;
+}
+
+.item-1 {
+  margin-left: 20px;
+}
+.item-2 {
+  margin-right: 20px;
 }

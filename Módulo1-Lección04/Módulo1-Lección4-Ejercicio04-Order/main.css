@@ -1,7 +1,18 @@
 .container-parrots {
-  width: "500px";
-  height: "300px";
+  /*width: "500px";
+  height: "300px";*/
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* align-items: center;*/
+}
+.header-tortuga {
+  border: 2px solid black;
+}
+.parrot {
+  width: 50%;
+  border: 2px solid black;
+  box-sizing: border-box;
 }
