@@ -1,0 +1,10 @@
+.cookies {
+  position: fixed;
+  background-color: yellow;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  /* si no tiene los atributos left y bottom, no funciona*/
+  left: 0;
+  bottom: 0;
+}

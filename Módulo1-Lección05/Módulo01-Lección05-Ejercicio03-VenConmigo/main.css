@@ -3,9 +3,11 @@
   position: fixed;
   height: 80px;
   width: 100%;
+  top:0px;
+  left:0px;
 }
 #title {
-  color: rrgb(57, 39, 6)0, 119, 116);
+  color: rgb(57, 39, 6)0, 119, 116);
   left: 20px;
   text-align: center;
 }
