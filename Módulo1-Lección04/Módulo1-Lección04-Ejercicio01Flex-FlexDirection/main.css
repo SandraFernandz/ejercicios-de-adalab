@@ -4,8 +4,14 @@
   display: flex;
   flex-direction: row;
   background-color: pink;
+  /*si añado esta línea justify-las-columnas quedarían en el centro del contender
+  justify-content: center;*/
+  /* si añado justify-align (para eso necesitaré darle altura en div hijo .item1, así no se toma toda altura del contendero) los elementos se centraría en el centro del eje vertical que aquí es el secundario
+  align-items: center;*/
 }
 .item1 {
+  /*si le doy altura a este div, no ocupará por defecto la altura de su contendeor padre 
+  height: 50px;*/
   box-sizing: border-box;
   border: 2px solid #666;
   background-color: violet;
