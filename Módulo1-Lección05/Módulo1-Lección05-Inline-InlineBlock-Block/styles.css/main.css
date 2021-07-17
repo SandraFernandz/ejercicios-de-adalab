@@ -1,0 +1,27 @@
+/*para centrar la lista en línea en navegador usamos class del ul y no del div*/
+.list {
+  text-align: center;
+}
+.item {
+  background-color: rgb(124, 161, 229);
+  display: inline;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  position: center;
+}
+/*también funcionaría con sólo .itemIB*/
+.inlineBlock .itemIB {
+  background-color: rgb(122, 174, 154);
+  display: inline-block;
+  height: 300px;
+  width: 100px;
+}
+.list2 {
+  text-align: center;
+}
+p {
+  display: block;
+  background-color: violet;
+  height: 200px;
+}
