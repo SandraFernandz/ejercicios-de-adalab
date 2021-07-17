@@ -1,0 +1,49 @@
+div {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  background-color: rgb(255, 83, 10);
+
+  height: 60px;
+  max-width: 960px;
+  top: 0px;
+}
+.main {
+  margin-top: 60px;
+  height: 500px;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(247, 225, 217);
+}
+/*muy importante no olvidar box-sizing: border-box or content-box*/
+/*porqué tiene que estar box-sizing en cada item (div independiente, elemento)?*/
+.item {
+  box-sizing: border-box;
+  height: 100%;
+}
+/*cómo organizar anchos de los dif divs aside derecho, aside izquierdo y article*/
+.aside1 {
+  background-color: rgb(219, 17, 148);
+}
+.article {
+  background-color: rgb(51, 171, 245);
+  width: 100%;
+}
+.aside2 {
+  background-color: rgb(237, 214, 37);
+  width: 100%;
+}
+.footer {
+  background-color: mediumseagreen;
+  width: 100%;
+  max-width: 960px;
+  height: 40px;
+  bottom: 0;
+  position: fixed;
+}
