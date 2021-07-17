@@ -1,0 +1,15 @@
+.icon {
+  transform: scale(0.5);
+  position: absolute;
+  right: 70px;
+  top: 5px;
+}
+.box {
+  position: absolute;
+  border: 2px solid black;
+  display: block;
+  width: 90%;
+  height: 100px;
+
+  margin: 30px;
+}
