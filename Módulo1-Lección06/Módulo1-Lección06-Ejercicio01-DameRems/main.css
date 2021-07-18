@@ -1,0 +1,20 @@
+html {
+  font-size: 16px;
+}
+.smiley {
+  /*si quiero que la cara mida 50px, necesitaré 3,12rem y si quiero que mida 200px necesitaré 12,5rem*/
+  width: 6, 25rem; /*antes 100px*/
+  height: 6, 25rem; /*antes 100px*/
+  line-height: 6, 25rem; /*antes 100px*/
+  text-align: center;
+  font-family: "courier new";
+  font-weight: bold;
+  font-size: 50px;
+  color: #424242;
+  background: #ffcc00;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

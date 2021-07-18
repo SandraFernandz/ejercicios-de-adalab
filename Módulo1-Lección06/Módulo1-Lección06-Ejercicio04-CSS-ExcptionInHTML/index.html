@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--si quitamos la siguiente línea, el diseño no es responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    /*.box ocupa ancho disponible al no especificar otra cosa*/
+    .box {
+      background: red;
+      height: 100px;
+    }
+    /*a partir de un min de 550px, se convierte en azul = si tiene un min de 550px se convierte en azul*/
+    /*si probamos en distintos dispositivos por defecto al entrar al dispositivo, la pantalla es del color que corresponde con el tamaño: por ejemplo, en un ordenador será azul y en un móbil que tiene una patnalla más pqna, será rojo*/
+    /**/
+    @media all and (min-width: 550px) {
+      .box {
+        background: blue;
+      }
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

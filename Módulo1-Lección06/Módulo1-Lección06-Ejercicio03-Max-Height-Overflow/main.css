@@ -1,0 +1,16 @@
+.news {
+  margin: 2em auto 0;
+  width: 400px;
+  border: 1px solid red;
+  padding: 1em;
+}
+.news__image {
+  width: 100%;
+}
+/*Si hacemos el párrafo en news_content mucho más largo, la caja sigue teniendo un máx de 222px pero aparecerá un sidebar para hacer scroll por overflow-y */
+.news__content {
+  border: 1px dashed pink;
+  max-height: 222px;
+  padding: 0 0.5em;
+  overflow-y: auto;
+}
