@@ -16,31 +16,58 @@ body {
   border: 2px solid grey;
   height: 100vh;
   display: block;
-  text-align: ;
-}
-
-fa {
-  color: red;
-  height: 100px;
-  width: 100px;
-}
-.footer {
   text-align: center;
+}
+.circulo{
+  display: flex;
+}
+.line{
+  position:relative;
+  border-bottom: 8px solid red;
+  width: 100%;
+ 
+ 
+}
+.circulo{
+  font-size: 50px;
+  color:#cc212a;
+}
+.
+}
+ /*.footer {
+ text-align: center;
   height: 150px;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100%;*/
 }
-.circulo {
-  font-size: 50px;
-  color: #cc212a;
-}
-#footer-texto {
-  color: grey;
-  font-size: 10px;
-  font-family: "Montserrat";
+/*.circulo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: row;
 }
 .line {
-  color: red;
+  position: relative;
+  width: 100%;
+  border-bottom: 3px solid red;
+}
+*/
+
+#footer {
+ display:block;
+ 
+
+}
+
+
+
+#footer-texto{
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  font-family: "Montserrat";
 }
