@@ -18,54 +18,18 @@ body {
   display: block;
   text-align: center;
 }
-.circulo{
-  display: flex;
+.circulo {
+  text-align: center;
+  font-size: 70px;
+  color: #cc212a;
 }
-.line{
-  position:relative;
-  border-bottom: 8px solid red;
-  width: 100%;
- 
- 
-}
-.circulo{
-  font-size: 50px;
-  color:#cc212a;
-}
-.
-}
- /*.footer {
- text-align: center;
-  height: 150px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;*/
-}
-/*.circulo {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  box-sizing: border-box;
-  justify-content: space-around;
-  align-items: row;
-}
-.line {
-  position: relative;
-  width: 100%;
-  border-bottom: 3px solid red;
-}
-*/
-
-#footer {
- display:block;
- 
-
+.footer {
+  display: relative;
+  height: 20vh;
+  border-top: 4px solid red;
 }
 
-
-
-#footer-texto{
+#footer-texto {
   text-align: center;
   color: grey;
   font-size: 20px;
