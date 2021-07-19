@@ -1,0 +1,46 @@
+body {
+  background: white;
+}
+.rojo {
+  color: #cc212a;
+  font-weight: bold;
+  /* sin position absolute en message centraba el texto
+  text-align: center;*/
+  font-family: "Montserrat";
+}
+.nombre {
+  font-size: 2rem;
+}
+.message {
+  margin-top: 200px;
+  border: 2px solid grey;
+  height: 100vh;
+  display: block;
+  text-align: ;
+}
+
+fa {
+  color: red;
+  height: 100px;
+  width: 100px;
+}
+.footer {
+  text-align: center;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.circulo {
+  font-size: 50px;
+  color: #cc212a;
+}
+#footer-texto {
+  color: grey;
+  font-size: 10px;
+  font-family: "Montserrat";
+}
+.line {
+  color: red;
+}
