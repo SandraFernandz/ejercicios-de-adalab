@@ -1,8 +1,14 @@
+/*body{
+  background-color: green;
+}*/
 .div-de-todo {
   font-size: 18px;
+  /*margin: 20px;*/
+  /*background-color: silver;*/
 }
 .container {
-  margin: 0 20px;
+  /*si ponemos dos valores al márgen se refiere el 1ero a top y bottom y el 2o a left y right*/
+ margin: 20px;
   background-color: pink;
 }
 .titulo {
@@ -12,7 +18,8 @@
 @media screen and (min-width: 768px) {
   .div-de-todo {
     margin-top: 30px;
-    margin: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .titulo {
     font-size: 28px;
@@ -37,6 +44,6 @@
    p{
        font-size: 24px;
        line-height: 32px;
-   }
+   }''
   }
 }
