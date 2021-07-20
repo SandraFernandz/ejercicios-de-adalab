@@ -1,0 +1,84 @@
+:root {
+  --font-color: #cc212a;
+  --font-family: "Montserrat";
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  font-size: 32px;
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
+.footer {
+  border-top: 3px solid var(--font-color);
+  /*otra manera de dar el ancho right.0; left:0;*/
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  /*para centrar el círculo creamos un flex que afectará a los dos elementos del footer*/
+  display: flex;
+  flex-direction: column;
+  /* justify-content no va a ayudar a centrar porque trabaja y alinea sobre el eje central (aquí vertical de columna y queremos que se alinee con el eje central del eje horizontal= eje secundario)
+  justify-content: center;*/
+  /*align items centra en el eje horizontal que en este caso es lo que queremos, y es el eje secundario en este caso puesot que flex-direction es vertical, de columna*/
+  align-items: center;
+}
+/*para poder centrarlo con un flexbox habría la opción de crear un contendero solo para el círculo y con flexbox, centrarlo así::after
+
+.icon-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+.footer-text {
+  font-family: var(--font-family);
+  color: grey;
+  align-items: center;
+}
+.footer-icon {
+  font-family: var(--font-family);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /*subir el circulo*/
+  /*position: relative;
+    bottom: 25px;*/
+
+  /*otra opción par asubir el círculo*/
+  /*transform:translate(cto mover en eje x, cto mover en eje y)*
+  o usar transform:translateX(cto muevo) y translateY en eje vertical*/
+  transform: translateY(-50%);
+
+  /*crear el círculo*/
+  width: 50px;
+  height: 50px;
+  background-color: var(--font-color);
+  border-radius: 50%;
+  /* margin: auto centra elementos dentro de su contendedor pero solo horizongalmente, es decir que también serviría para centrar el círculo horizonatalmente en la página*/
+  /*margin: auto;*/
+  /* esto dibuja un círculo alrededor del cüirculo, como si fuera un borde redondo border: 3px solid black;*/
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .footer-icon {
+    order: 1;
+  }
+}
