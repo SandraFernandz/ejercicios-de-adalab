@@ -67,9 +67,9 @@
   height: 50px;
   background-color: var(--font-color);
   border-radius: 50%;
-  /* margin: auto centra elementos dentro de su contendedor pero solo horizongalmente, es decir que también serviría para centrar el círculo horizonatalmente en la página*/
+  /* margin: auto centra elementos dentro de su contendedor pero solo horizontalmente, x eso también serviría para centrar el círculo horizonatalmente en la página*/
   /*margin: auto;*/
-  /* esto dibuja un círculo alrededor del cüirculo, como si fuera un borde redondo border: 3px solid black;*/
+  /* esto dibuja un círculo alrededor del círculo, como si fuera un borde redondo border: 3px solid black;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -79,6 +79,8 @@
     justify-content: space-between;
   }
   .footer-icon {
+    /*transform quita la propiedad para que el punto suba sobre la línea*/
+    transform: none;
     order: 1;
   }
 }
