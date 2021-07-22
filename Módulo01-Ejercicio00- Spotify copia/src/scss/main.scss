@@ -1,0 +1,31 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+
+/* en dev tools buscar telefonito para ver cómo se ve en la versión de teláfono que es la que estamos haciendo es para un TELEFONO en un navegador de ordenador se verá horrible*/
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  /*align items or justify content*/
+}
+.header .logo {
+  height: 35px;
+}
+.header .menu {
+  height: 20px;
+}
+
+.trial {
+  background-color: cornflowerblue;
+  /*no puedo darle 50% porque se refiere al body y el body es infinito*/
+  height: vh;
+}
+.footer {
+  background-color: black;
+}
