@@ -15,6 +15,10 @@ textarea {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+.name {
+  resize: horizontal;
+}
+
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
   background-color: #04aa6d;
