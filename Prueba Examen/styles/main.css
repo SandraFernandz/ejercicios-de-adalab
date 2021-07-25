@@ -1,0 +1,91 @@
+:root {
+  --font-family: "Rubik", sans-serif;
+  --color-grey: #4a4a4a;
+  --font-size: 16px;
+}
+
+.header {
+  font-family: var(--font-family);
+  position: fixed;
+  width: 100vw;
+  height: 120px;
+  top: 0;
+  position: absolute;
+}
+.main {
+  top: 120px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3cdbc0;
+}
+
+.message {
+  font-size: 30px;
+  /*aumenta la largada del párrafo (block element) de manera que sigue en la línea siguiente*/
+  width: 8em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: var(--font-family);
+}
+
+.item {
+  font-size: var(--font-size);
+  font-weight: bold;
+  font-family: var(--font-family);
+  /*elimina el subrayado del enlace*/
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  padding: 15px;
+}
+
+.image {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav {
+  /*eliminar bolitas de lista*/
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a:link {
+  color: var(--color-grey);
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .item {
+    margin-right: 30px;
+  }
+
+  .message {
+    font-size: 40px;
+  }
+}
