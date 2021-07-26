@@ -1,0 +1,20 @@
+.container-fluid {
+  background-color: grey;
+}
+
+.header {
+  col-12 {
+    background-color: cadetblue;
+    height: 20px;
+  }
+}
+
+.menu col-8 {
+  background-color: darkorange;
+}
+.content col-4 {
+  background-color: rgb(220, 178, 214);
+}
+.footer col-12 {
+  background-color: deeppink;
+}
