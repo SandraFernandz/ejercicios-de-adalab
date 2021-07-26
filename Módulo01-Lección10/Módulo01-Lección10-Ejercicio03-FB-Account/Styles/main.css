@@ -1,3 +1,11 @@
+div #names {
+  /* box-sizing: border-box;
+ ;
+  width: 50%; */
+  display: inline-block;
+  resize: horizontal;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 input[type="email"],
@@ -33,6 +41,6 @@ input[type="submit"]:hover {
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 2px;
-  background-color: #babce8;
+  background-color: #8f91ba;
   padding: 20px;
 }
