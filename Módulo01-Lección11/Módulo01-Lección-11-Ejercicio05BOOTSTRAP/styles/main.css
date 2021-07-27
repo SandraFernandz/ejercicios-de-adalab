@@ -1,0 +1,22 @@
+.container-fluid {
+  background-color: rgb(205, 236, 226);
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* existen dos divs con esta clase ¿? */
+.header {
+  background-color: cornflowerblue;
+  /* height: 100px; */
+  height: 10vh;
+}
+
+.menu {
+  background-color: rgb(161, 187, 241);
+  height: 200px;
+}
+
+.content {
+  background-color: rgb(173, 207, 173);
+}
