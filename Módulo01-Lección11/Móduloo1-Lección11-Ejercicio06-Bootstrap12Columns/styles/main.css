@@ -1,0 +1,22 @@
+.header.col-1 {
+  background-color: rgb(163, 205, 163);
+}
+
+.header.col-2 {
+  background-color: lightblue;
+}
+
+.fila1 {
+  background-color: rgb(222, 237, 222);
+}
+
+.main.col-4 {
+  background-color: lightskyblue;
+}
+
+.main.col-6 {
+  background-color: navajowhite;
+}
+.footer.col-12 {
+  background-color: mediumvioletred;
+}
