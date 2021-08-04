@@ -1,5 +1,10 @@
-'use strict';
+"use strict";
 
-const myAddress ="calle reitmorstr"; 
+let myAddress;
 
-document.querySelector(myAddress).innerHTML="calle liebig";
+myAddress = "Calle Padilla";
+myAddress = "Calle Muntaner";
+
+document.querySelector("h1").innerHTML = myAddress;
+
+
