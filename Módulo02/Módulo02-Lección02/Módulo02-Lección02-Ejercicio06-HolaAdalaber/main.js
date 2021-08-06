@@ -10,7 +10,7 @@
 const nameAdalaber = document.querySelector(".js_adalaber");
 nameAdalaber.innerHTML = "Lola";
 
-const greeting = document.querySelector(".greeting");
+const greeting = document.querySelector(".js_greeting");
 greeting.innerHTML = "Hola";
 
 
