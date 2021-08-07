@@ -24,6 +24,8 @@ const lista = document.querySelector(".js_lista");
 
 let html = `<li> ${item1} <span> ${precio1} </span></li>`;
 
+
+
 html += `<li> ${item2} <span> ${precio2} </span></li>`;
 
  
