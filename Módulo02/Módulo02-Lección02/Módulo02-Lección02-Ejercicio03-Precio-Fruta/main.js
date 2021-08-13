@@ -10,6 +10,8 @@ const lista = document.querySelector(".js_lista");
 // meter una variable en un string 
 // opcion1: concatenación (estoy usando comillas simples y no acento abierto)
 
+
+
 // lista.innerHTML = '<li>' + item1 + '<span>' + precio1 + '</span></li>';
 
 // opción2: con string template (con acento abierto)- interpolación
