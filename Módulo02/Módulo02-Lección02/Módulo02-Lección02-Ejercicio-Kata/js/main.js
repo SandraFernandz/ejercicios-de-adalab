@@ -21,7 +21,6 @@ const containerTarget = document.querySelector(".js_target");
 const text = containerOrigin.innerHTML;
 //toLocalUpperCase(); pasa a may en cualquier alfabeto
 const upperText = text.toLocaleUpperCase();
-
 // recoge el valor de la variable (lo podemos ver en el devTools console)
 // console.log(containerOrigin.innerHTML);
 
