@@ -1,0 +1,7 @@
+let secretLetter = "y";
+function mySecretLetter() {
+  secretLetter = "x";
+  return secretLetter;
+}
+console.log(mySecretLetter()); // devuelve "x"
+console.log(secretLetter); // devuelve "x"
