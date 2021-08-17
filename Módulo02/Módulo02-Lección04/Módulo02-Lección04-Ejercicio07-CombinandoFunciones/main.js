@@ -3,7 +3,7 @@
 function getEl (selector) {
     const element = document.querySelector(selector);
     if(!element){
-        return `No existe ningún elemento con clase, id o tag llamado ${selector}`;
+        return `There is no element, id or tag called ${selector}`;
 
         //tb se puede aquí usar en lugar del return de la línea 5
         //console.error(`No existe ningún elemento con clase, id o tag llamado ${selector}`);
