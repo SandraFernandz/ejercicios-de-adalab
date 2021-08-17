@@ -1,17 +1,5 @@
 'use strict';
 
-const evenOrOdd = (num) =>{
-  if(num % 2 === 0){
-      return `Number ${num} is even`
-  }
-  else{
-      return `Number ${num} is odd`
-  }
-}
-
-console.log(evenOrOdd(9999));
-
-
 function getEl (selector) {
     const element = document.querySelector(selector);
     if(!element){
@@ -24,5 +12,23 @@ function getEl (selector) {
     }
 }
 
-const btnEl = getEl('.js_title');
-console.log(btnEl);
+const evenOrOdd = (num) =>{
+  if(num % 2 === 0){
+      return `Number ${num} is even`
+  }
+  else{
+      return `Number ${num} is odd`
+  }
+}
+
+const numWord = getEl('.js_paragraph');
+
+console.log(`Your number is: ${numWord.innerHTML}`);
+
+const wordNum = parseInt(numWord.innerHTML);
+
+console.log(evenOrOdd(wordNum));
+
+
+
+
