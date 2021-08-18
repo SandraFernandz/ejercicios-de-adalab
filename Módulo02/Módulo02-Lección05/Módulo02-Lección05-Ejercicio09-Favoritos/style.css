@@ -1,0 +1,22 @@
+.image {
+  height: 150px;
+  width: auto;
+  filter: sepia(30%);
+}
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+div {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.selected1 {
+  background-color: powderblue;
+  height: 200px;
+  width: 200px;
+}
