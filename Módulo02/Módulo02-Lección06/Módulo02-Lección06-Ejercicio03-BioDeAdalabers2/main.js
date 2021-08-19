@@ -13,7 +13,7 @@ adalaber1.showBio = function(){
 // adalaber1.showBio = function (){
 //     console.log(`Mi nombre es ${this.name}, tengo ${this.age} años y soy ${this.profession}`);
 
-}
+
 
 console.log(adalaber1.showBio());
 
