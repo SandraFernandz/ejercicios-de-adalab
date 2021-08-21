@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: wheat;
+  margin: 20px;
+  margin-top: 100px;
+  padding: 20px;
+}
+.redBackground {
+  background-color: palevioletred;
+}
+.blueBackground {
+  background-color: powderblue;
+}
