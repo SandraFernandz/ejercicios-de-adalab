@@ -1,0 +1,22 @@
+body {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.button {
+  background-color: thistle;
+  font-size: 30px;
+  color: rgb(122, 33, 122);
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.buttonSecondStyle {
+  background-color: rgb(203, 32, 203);
+  font-size: 50px;
+  color: rgb(163, 132, 163);
+  font-weight: 500;
+}
