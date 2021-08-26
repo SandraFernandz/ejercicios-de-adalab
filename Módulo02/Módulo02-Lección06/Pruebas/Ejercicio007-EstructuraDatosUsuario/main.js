@@ -5,7 +5,7 @@ user.firstName = 'Bob';
 user.lastName = 'Brown';
 user.age = 50;
 user.job = 'developer';
-
+g
 console.log(user);
 
 user.firstName = 'Barry';
