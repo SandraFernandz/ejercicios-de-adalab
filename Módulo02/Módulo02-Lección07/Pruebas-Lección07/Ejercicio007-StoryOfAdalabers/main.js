@@ -1,59 +1,53 @@
 'use strict';
 
-let adalabers = [
-    { 
-    nombre: 'María',
-    edad:32,
-    profesión: 'veterinaria'
+const adalabers = [
+    {
+        name: 'María',
+        age: 29,
+        profession: 'journalist'
     },
     {
-    nombre: 'Lola',
-    edad: 35,
-    profesión: 'periodista'
+        name: 'Gillian',
+        age: 45,
+        profession:'actress'
     },
     {
-    nombre: 'Carmen',
-    edad: 39,
-    profesión: 'bailarina'
+        name: 'Suze',
+        age: 34,
+        profession: 'dancer'
     },
     {
-    nombre: 'Asunción',
-    edad: 25,
-    profesión: 'somelier'
-    },
-    {    
-    nombre: 'Clarisa',
-    edad: 39,
-    profesión: 'interiorista'
-    },
+        name: 'Nella',
+        age: 40,
+        profession: 'designer'
+    }
 ];
 
-//función que devuelve el número de adalabers del arreglo
-function countAdalabers (){
-    console.log(adalabers.length);
+// función que cuenta el número de adalabers
+function countAdalabers(){
+    const numAdalabers = adalabers.length;
+    console.log(numAdalabers);
 }
 countAdalabers();
 
- //función que devuelve media de edad de adalabers del arreglo
- let totalAge = 0;
- function averageAge(){   
+//función que devuelve media de edad de adalabers
+let calcAge = 0;
+function averageAge(){
     for(let i = 0; i < adalabers.length; i++){
-        totalAge += adalabers[i].edad;
+        calcAge += adalabers[i].age;
     }
 
-   let averageAge = totalAge / adalabers.length;
-   return averageAge;
+   let obtainAge = calcAge / adalabers.length;
+   return obtainAge;
 }
 
-console.log('La media es' + " " +averageAge());
-//tb funciona si escribimos
-//console.log('La media es' + " " +averageAge(adalabers));
+console.log(`La edad media de las Adalabers es de ${averageAge()}`);
 
 //función para obtener nombre de la Adalaber más joven
 function theYoungest(){
     // * Inicializar variables: 
   //Posición inicial para comenzar el ciclo for, 1er objeto a comparar
-  let youngest = adalabers[0].edad;
+  let youngest = adalabers[0].age;
   //Posición de la adalaber más joven
   let position = 0;
   //Recorrido para comparar edades en el array (edad en índice 0 sirve de base, por eso empezamos en i = 1)
@@ -76,7 +70,6 @@ return youngestAge
 }
 
 console.log(`La adalaber más joven es ${theYoungest()}`)
-
 
 //función para contar adalabers q son diseñadoras
 
@@ -101,3 +94,9 @@ function countDesigners(){
 
 
 console.log(`Hay ${countDesigners()} diseñadora/s entre las Adalabers`);
+
+  
+
+
+
+

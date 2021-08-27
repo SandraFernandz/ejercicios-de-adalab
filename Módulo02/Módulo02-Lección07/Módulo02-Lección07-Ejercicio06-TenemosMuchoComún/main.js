@@ -1,5 +1,8 @@
 'use strict';
 
+//ver en apartado Pruebas-Lección07
+//en el ejercicio 006 otra manera de resolverlo y plantearlo
+
 const button = document.querySelector('.button');
 const info = document.querySelector('.userWork');
 const alsoMine = document.querySelector('.paragraph');

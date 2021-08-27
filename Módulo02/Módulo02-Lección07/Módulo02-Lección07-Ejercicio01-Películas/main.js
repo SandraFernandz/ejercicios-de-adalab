@@ -5,7 +5,6 @@ function workingWithMovies(){
 const films = ['Suddenly', 'Frozen', 'Brave'];
 console.log(films);
 
-
 //añadimos un nuevo elemento al array con índice 3
 films[3] = 'Jumanji';
 console.log(films);
