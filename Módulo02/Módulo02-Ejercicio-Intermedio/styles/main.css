@@ -1,6 +1,11 @@
 .happy_body {
   background-color: hsl(48, 100%, 50%);
 }
+
+.unhappy_body {
+  background-color: #ff9900;
+}
+
 .structure {
   display: flex;
   flex-direction: column;
