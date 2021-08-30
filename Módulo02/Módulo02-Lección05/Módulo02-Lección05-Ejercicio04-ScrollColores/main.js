@@ -10,8 +10,9 @@ function chgBackground() {
 
     if (window.scrollY >= 250) {
         container.classList.add('sand')
+        //SI ponemos remove en el primer if xq que esté cd vuelva a subir el scroll
         //no necesitamos remove xq no partimos de ninguna clase anterior
-        // container.classList.remove('blue')
+        container.classList.remove('blue')
     } else {
         container.classList.remove('sand')
         container.classList.add('blue')

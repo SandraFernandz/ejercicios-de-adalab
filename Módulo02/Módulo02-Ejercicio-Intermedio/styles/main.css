@@ -19,3 +19,40 @@
 .face {
   font-size: 90px;
 }
+
+/* css de cris:
+
+
+CSS:
+.all {
+  background-color: #ffcc00;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.all__face {
+  font-size: 200px;
+}
+.all__rest {
+  display: flex;
+}
+.list {
+  margin-right: 10px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.all__rest__button {
+  width: 100px;
+  height: 25px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+.list {
+  width: 75px;
+  height: 25px;
+} */

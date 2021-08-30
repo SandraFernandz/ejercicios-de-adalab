@@ -45,3 +45,37 @@ function createRandomNum (){
 updateButton.addEventListener('click', createRandomNum);
 
 
+// Opciones de Cris:
+// const button =document.querySelector('.js_button');
+// const happy = document.querySelector('.js_happy');
+// const sad = document.querySelector('.js_sad');
+// const list = document.querySelector('.js_select');
+// const title = document.querySelector('.js_face');
+
+// function handlerButton(){
+//     if(list.value === happy.value){
+  
+//         title.innerHTML=happy.value;
+//     }
+//     else if(list.value !=happy.value){
+
+//         title.innerHTML=sad.value
+//     }
+// }
+
+
+// button.addEventListener('click', handlerButton);
+
+// y también funciona:
+// function handlerButton(){
+//       if(list.value === happy.innerHTML){
+    
+//           title.innerHTML=happy.innerHTML;
+//       }
+//       else {
+  
+//           title.innerHTML=sad.innerHTML;
+//       }
+  
+//   }
+//   button.addEventListener('click', handlerButton);
