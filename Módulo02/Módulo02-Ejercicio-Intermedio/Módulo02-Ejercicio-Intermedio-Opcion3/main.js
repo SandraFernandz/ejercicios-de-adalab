@@ -4,9 +4,17 @@ const container = document.querySelector(".container");
 const selectEl = document.querySelector(".js-select");
 const faceEl = document.querySelector(".js-face");
 
-//esta función genera un número aleatorio. podríamos dividir esta función en dos funciones una para crear el num y otra para ver si es par. sería mejor, más elegante. una tarea por función es un concepto más elegante.
+//esta función genera un número aleatorio
 function getRandomNumber() {
-  let randomNumber = Math.round(Math.random() * 100);
+  const randomNumber = Math.round(Math.random() * 100);
+  return randomNumber;
+}
+//esta función cambia el color del fondo según si un número es par o impar. tb importante ver que la variable randomNumber que está en la función y la anterior y esta son variables distinas, pero pueden llevar el mismo nombre porque están en entornos locales, viven dentro de su función
+function updateBackground() {
+  const randomNumber = getRandomNumber();
+  console.log(randomNumber)
+
+  //ha creado una clase extra .background-Y{} que es igual en apariencia de background a la clase que carga la página de nombre .container{}
 
   if (randomNumber % 2 === 0) {
     container.classList.add("background-Y");
@@ -23,12 +31,11 @@ function updateFace() {
   faceEl.innerHTML = selectValue;
 }
 
-//esta función llama a las dos funciones y es posible englobarlas en una función porque el evento que las pone en marcha es el mismo: click
 function handleUpdateBtn() {
   // console.log(":)");
   //proceso a ejecutar al hacer click en el boton update
-  getRandomNumber();
+  updateBackground();
   updateFace();
 }
-//procurar que la función manejadora tenga handle en su nombre como a continuación
+
 update.addEventListener("click", handleUpdateBtn);
