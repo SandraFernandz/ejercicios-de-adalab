@@ -9,7 +9,7 @@ function getRandomNumber() {
   const randomNumber = Math.round(Math.random() * 100);
   return randomNumber;
 }
-//esta función cambia el color del fondo según si un número es par o impar
+//esta función cambia el color del fondo según si un número es par o impar. tb importante ver que la variable randomNumber que está en la función y la anterior y esta son variables distinas, pero pueden llevar el mismo nombre porque están en entornos locales, viven dentro de su función
 function updateBackground() {
   const randomNumber = getRandomNumber();
   console.log(randomNumber)

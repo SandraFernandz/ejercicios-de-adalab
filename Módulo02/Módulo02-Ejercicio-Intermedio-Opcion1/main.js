@@ -50,6 +50,7 @@ function createRandomNum (){
 // function getRandomInt(max){
 //       return Math.floor(Math.random() * max);
 // }
+//estaría mejor si la función handle incluyera esa palabra en su nombre, p.e. handleCreateRandomNum
 updateButton.addEventListener('click', createRandomNum);
 
 

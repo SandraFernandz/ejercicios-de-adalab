@@ -4,7 +4,7 @@ const container = document.querySelector(".container");
 const selectEl = document.querySelector(".js-select");
 const faceEl = document.querySelector(".js-face");
 
-//esta función genera un número aleatorio
+//esta función genera un número aleatorio. podríamos dividir esta función en dos funciones una para crear el num y otra para ver si es par. sería mejor, más elegante. una tarea por función es un concepto más elegante.
 function getRandomNumber() {
   let randomNumber = Math.round(Math.random() * 100);
 
@@ -30,5 +30,5 @@ function handleUpdateBtn() {
   getRandomNumber();
   updateFace();
 }
-
+//procurar que la función manejadora tenga handle en su nombre como a continuación
 update.addEventListener("click", handleUpdateBtn);
