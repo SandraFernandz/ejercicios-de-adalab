@@ -6,6 +6,12 @@ const updateButton = document.querySelector('.js_button');
 const mainFace = document.querySelector('.js_face');
 const happyFace = document.querySelector('.js_happy');
 const unhappyFace = document.querySelector('.js_unhappy');
+const formField = document.querySelector('.js_form');
+
+//esta función que hemos declarado en add event listener (lo podríamos haber hecho en más pasos) impide que, dado que estamos usando un <form> se resetee el cambio de color del fondo. form resetea valores al darle al boton actualizar y esto lo impide.
+formField.addEventListener('click', function(event){
+      event.preventDefault()
+    });
 
 //muy importante crear esta variable para usarla después en relación con classList.add y classList.remove
 const body = document.querySelector('.body');
@@ -23,12 +29,14 @@ const body = document.querySelector('.body');
 // updateButton.addEventListener('click', changeMood);
 
 //función que cambia el color de fondo. muy imp crear const body con querySelector para usar en classList.add/remove
+
+//es mejor crear dos funciones independientes para cada proceso. Que cada una genere un proceso independiente. y pueden estar dentro de la función principal, que se activa al pinchar en el botón del update.
 function createRandomNum (){
       //cambiar carita centro según botón input
-      //pregunta: porqué no funciona con chooseMood.innerHTML en lugar de chooseMood.value?
+      //pregunta: porqué no funciona con chooseMood.innerHTML en lugar de chooseMood.value? porque chooseMood se refiere a la etiqueta select y select contiene options (esas si contienen innerHTML pero select en sí, no tiene innerHTML)
       mainFace.innerHTML = chooseMood.value;
 
-      let randomNum = Math.floor(Math.random() * 101);
+      let randomNum = Math.floor(Math.random() * 100);
       if(randomNum %2 !== 0){
             body.classList.remove('happy_body');
             body.classList.add('unhappy_body');

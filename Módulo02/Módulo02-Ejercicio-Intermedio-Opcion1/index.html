@@ -9,10 +9,13 @@
     <title>Ejercicio Intermedio</title>
   </head>
   <body class="body happy_body">
+    <!-- o sería mejor contener todo en un main y ahí poner los estilos -->
     <div class="structure js_structure">
       <h1 class="face js_face">:)</h1>
-      <form class="option js_option">
+      <form class="js_form">
         <select id="mood" class="js_mood" name="mood">
+          <!-- option debe contener atributo value xq el user no introduce sino elige opción. tb podría usar button o submit sin que se refresque la página en js preventDefault  -->
+          <!-- o un input type button que es lo que han hecho los profes -->
           <option value=":)">:)</option>
           <option value=":(">:(</option>
         </select>
