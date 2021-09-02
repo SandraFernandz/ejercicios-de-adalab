@@ -1,6 +1,6 @@
 'use strict';
 
-const task1 = document.querySelector('.js_task1');
+const list = document.querySelector('.js_task1');
 
 const tasks = [
     { name: 'Recoger setas en el campo', completed: true },
@@ -12,10 +12,18 @@ const tasks = [
     }
   ];
 
-  if(tasks[0].completed === true){
-    task1.classList.add('task1');
-  }else{
-      task1.classList.remove('task1')
-  }
+//bucle para pintar 
 
-task1.innerHTML = tasks[0].name;
+  for(let task of tasks){
+  const html =`<li>${task.name}</li>`;
+  list.innerHTML += html;
+
+}
+
+  // if(tasks[0].completed === true){
+  //   list.classList.add('task1');
+  // }else{
+  //     list.classList.remove('task1')
+  // }
+
+

@@ -9,6 +9,7 @@ function get100Numbers(){
     for(let i=0; i < arrLength; i++){
         acc++
         arr.push(acc);
+        console.log(acc);
     }
     return arr;
 }
