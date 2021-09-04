@@ -33,6 +33,8 @@ const main = document.querySelector('.js-main');
      }
 }
 
+//en el fichero modulo02-leccion09-Ejercicio04-conDinamismo vemos la continuación del ejercicio que incluye:
+
 //añadimos input tipo checkbox al final de cada tarea. Para ello vamos a añadir un input de tipo checkbox al final de cada tarea que nos falte por completar. El checkbox de las tareas completadas debe aparecer marcado (checked). Además, cuando el usuario marque la tarea como completada marcando el checkbox, deben suceder varias cosas:
 // la tarea debe mostrarse como completada (tachada)
 // debemos modificar su estado (propiedad completed) en el array tasks.
