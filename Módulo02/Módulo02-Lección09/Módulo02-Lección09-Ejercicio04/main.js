@@ -1,7 +1,5 @@
 'use strict';
 
-const list = document.querySelector('.js_task1');
-
 const tasks = [
     { name: 'Recoger setas en el campo', completed: true },
     { name: 'Comprar pilas', completed: true },
@@ -12,18 +10,29 @@ const tasks = [
     }
   ];
 
-//bucle para pintar 
+const main = document.querySelector('.js-main');
 
-  for(let task of tasks){
-  const html =`<li>${task.name}</li>`;
-  list.innerHTML += html;
+//pintar una tarea en el html
+//main.innerHTML = `<li>${tasks[0].name}</li>`;
 
+//pintar todas las tareas
+//    for(const tarea of tasks){
+//      const html = `<li>${tarea.name}</li>`;
+//      main.innerHTML += html;
+//}
+
+ //hemos creado un estilo completed en css para tachar tareas en las que la propiedad booleana completed === true
+
+ for(const tarea of tasks){
+     if(tarea.completed === true){
+        const html = `<li class="completed">${tarea.name}</li>`;
+        main.innerHTML += html;
+     }else{
+        const html = `<li>${tarea.name}</li>`;
+        main.innerHTML += html;
+     }
 }
 
-  // if(tasks[0].completed === true){
-  //   list.classList.add('task1');
-  // }else{
-  //     list.classList.remove('task1')
-  // }
-
-
+//añadimos input tipo checkbox al final de cada tarea. Para ello vamos a añadir un input de tipo checkbox al final de cada tarea que nos falte por completar. El checkbox de las tareas completadas debe aparecer marcado (checked). Además, cuando el usuario marque la tarea como completada marcando el checkbox, deben suceder varias cosas:
+// la tarea debe mostrarse como completada (tachada)
+// debemos modificar su estado (propiedad completed) en el array tasks.
