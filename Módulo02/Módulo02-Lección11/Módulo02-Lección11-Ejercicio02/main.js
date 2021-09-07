@@ -15,9 +15,5 @@ fetch(`https://swapi.dev/api/people/?search=${character}`)
     }
   });
 //              console.log(data);
-//          }
-//              ){
-//          }
-//      )
 
 button.addEventListener("click", provideNamesHandle);
