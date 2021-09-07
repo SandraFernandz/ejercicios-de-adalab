@@ -7,6 +7,17 @@
     <title>Document</title>
   </head>
   <body>
+    <form action="">
+      <label>¿Que ciudad quieres visitar?</label>
+      <!-- selected muestra la opción por defecto en el desplegable
+     con disabled no puedes volver a elegir selected -->
+      <select class="js_select">
+        <option disabled selected>Elige tu opción</option>
+        <option value="Madrid" class="js-sel-madrid">Madrid</option>
+        <option value="Nueva York" class="js-sel-new-york">Nueva York</option>
+        <option value="Paris" class="js-sel-paris">Paris</option>
+      </select>
+    </form>
     <img src="images/madrid.jpg" alt="Madrid" width="500" class="js-madrid" />
     <img
       src="images/new-york.jpg"
@@ -15,14 +26,6 @@
       class="js-new-york"
     />
     <img src="images/paris.jpg" alt="Paris" width="500" class="js-paris" />
-    <form action="">
-      <label>¿Que ciudad quieres visitar?</label>
-      <select class="js_select">
-        <option value="Madrid" class="js-sel-madrid">Madrid</option>
-        <option value="Nueva York" class="js-sel-new-york">Nueva York</option>
-        <option value="Paris" class="js-sel-paris">Paris</option>
-      </select>
-    </form>
     <script src="main.js"></script>
   </body>
 </html>
