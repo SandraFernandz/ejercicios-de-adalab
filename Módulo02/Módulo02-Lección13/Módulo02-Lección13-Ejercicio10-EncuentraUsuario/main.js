@@ -21,7 +21,7 @@ const findArrayIndexOfUser = users.findIndex(
 
 console.log(findArrayIndexOfUser); //3
 
-//borrar a ese usuario con splice
+//borrar a ese usuario con splice (primer parámetro dde empiezo a contar, recordar que contamos desde cero, segundo parámetro ctas posiciones borro)
 const eraseUser = users.splice(3, 1);
 console.log(eraseUser);
 console.log(users);
