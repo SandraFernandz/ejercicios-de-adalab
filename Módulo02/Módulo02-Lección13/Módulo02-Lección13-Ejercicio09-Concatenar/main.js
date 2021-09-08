@@ -9,8 +9,13 @@ const runners = [
 ];
 
 const whoWon = runners
-  .map((runner) => runner.name)
-  .filter((runner) => runner.student === true)
-  .reduce((acc, time) => acc + time, 0);
+  .filter((runners) => runners.student === true)
+  .reduce((timeToCompare, currentTime) => {
+    if (timeToCompare.time < currentTime.time) {
+      return timeToCompare;
+    } else {
+      return currentTime;
+    }
+  });
 
 console.log(whoWon);
