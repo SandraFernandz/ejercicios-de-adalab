@@ -1,4 +1,6 @@
 import '../styles/App.scss';
+import '../styles/_styles.scss';
+import logo from '../images/adalab-logo.png';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <nav>
           <ul className="nav">
             <li>
+              <img src={logo} title="Adalab" alt="" />
               <a
                 href="https://adalab.es/blog/"
                 className="item"
