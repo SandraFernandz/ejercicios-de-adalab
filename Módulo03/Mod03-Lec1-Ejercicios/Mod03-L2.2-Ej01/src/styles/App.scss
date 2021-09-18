@@ -1,0 +1,11 @@
+div {
+  background-color: powderblue;
+  height: 100vh;
+}
+.form {
+  margin-left: 50px;
+  &_input {
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+}
