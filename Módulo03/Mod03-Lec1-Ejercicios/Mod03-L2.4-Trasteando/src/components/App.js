@@ -24,7 +24,7 @@ const App = () => {
   // Retornamos todo el código HTML que queremos que React pinte en la página.
   return (
     <div>
-      <h2>Generador de emails:</h2>
+      <h1>Generador de emails:</h1>
       <form>
         <label>
           Escribe un email:
