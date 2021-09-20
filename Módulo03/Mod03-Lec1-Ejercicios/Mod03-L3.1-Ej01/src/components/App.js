@@ -1,11 +1,15 @@
 import '../styles/App.scss';
 
-function App() {
+// Fichero src/components/App.js
+const App = () => {
   return (
     <div>
-      <h1>Hola Mundo</h1>
+      <form>
+        <label forhtml="name">Escribe un nombre:</label>
+        <input type="name" name="name" id="name" placeholder="María García" />
+      </form>
     </div>
   );
-}
+};
 
 export default App;
