@@ -42,7 +42,7 @@ const App = () => {
           />
         </label>
       </form>
-      <p>Número de veces que has hecho click: {total}</p>
+      <p>Número de veces que has hecho click: `+{total}`</p>
     </div>
   );
 };
