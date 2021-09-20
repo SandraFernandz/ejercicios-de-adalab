@@ -2,12 +2,12 @@ import '../styles/App.scss';
 import { useState } from 'react';
 
 function App() {
-  const [ingredients, setIngredients] = useState('Elige');
+  const [ingredients, setIngredients] = useState(false);
 
   const handleIngredients = (ev) => {
     setIngredients(ev.target.checked);
     if (ingredients === true) {
-      setIngredients(ev.target.checked);
+      onChange{ingredients}
     }
   };
 
@@ -21,6 +21,7 @@ function App() {
           type="checkbox"
           name="macarrones"
           id="macarrones"
+          checked={ingredients}
           onChange={handleIngredients}
         />
         <label htmlFor="patatas">Patatas</label>
@@ -28,6 +29,7 @@ function App() {
           type="checkbox"
           name="patatas"
           id="patatas"
+          checked={ingredients}
           onChange={handleIngredients}
         />
         <label htmlFor="nueces">Nueces</label>
@@ -35,6 +37,7 @@ function App() {
           type="checkbox"
           name="nueces"
           id="nueces"
+          checked={ingredients}
           onChange={handleIngredients}
         />
         <label htmlFor="huevos">Huevos</label>
@@ -42,6 +45,7 @@ function App() {
           type="checkbox"
           name="huevos"
           id="huevos"
+          checked={ingredients}
           onChange={handleIngredients}
         />
         <label htmlFor="cebolla">Cebolla</label>
@@ -49,6 +53,7 @@ function App() {
           type="checkbox"
           name="cebolla"
           id="cebolla"
+          checked={ingredients}
           onChange={handleIngredients}
         />
         <p>Los ingredientes necesarios son{ingredients}</p>
