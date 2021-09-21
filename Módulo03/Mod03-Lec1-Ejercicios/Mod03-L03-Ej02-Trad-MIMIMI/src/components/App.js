@@ -9,6 +9,8 @@ function App() {
     setText(inputValue);
   };
   const convertToIs = () => {
+    //nunca podemos pasar una variable de estado como paramtetro
+    //tampoco pocemos aplicarle una modificación. si queremos hacerlo tendremos que guardarla en una variable
     const inputValue = text;
     return inputValue.replace(/[aeou]/gi, 'i');
   };
