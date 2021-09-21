@@ -26,7 +26,10 @@ const App = () => {
       <div className={theme}>
         {' '}
         <button>
-          <i className="fas fa-arrow-left" onClick={handleNoHamburguerMenu}></i>
+          <i
+            className="fas fa-arrow-right"
+            onClick={handleNoHamburguerMenu}
+          ></i>
         </button>
         <ul>
           <li>
