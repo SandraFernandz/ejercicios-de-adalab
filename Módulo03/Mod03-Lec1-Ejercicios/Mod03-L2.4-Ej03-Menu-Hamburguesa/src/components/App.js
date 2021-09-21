@@ -1,17 +1,17 @@
 // Fichero src/components/App.js
-import '../styles/App.css';
+import '../styles/App.scss';
 import { useState } from 'react';
 
 const App = () => {
   const [theme, setTheme] = useState('shown');
-  const renderHamburguerMenu = () => {
+  const handleHamburguerMenu = () => {
     if (theme === 'hidden') {
       setTheme('shown');
     }
     console.log(theme);
   };
 
-  const unRenderHamburguerMenu = () => {
+  const handleNoHamburguerMenu = () => {
     if (theme === 'shown') {
       setTheme('hidden');
     }
@@ -19,27 +19,21 @@ const App = () => {
   return (
     <div>
       <nav>
-        <button className="form__buton" onClick={renderHamburguerMenu}>
+        <button className="form__buton" onClick={handleHamburguerMenu}>
           <i className="icon fas fa-bars"></i>
         </button>
       </nav>
       <div className={theme}>
         {' '}
         <button>
-          <i className="fas fa-arrow-left" onClick={unRenderHamburguerMenu}></i>
+          <i className="fas fa-arrow-left" onClick={handleNoHamburguerMenu}></i>
         </button>
         <ul>
           <li>
-            <a>menu 1</a>
+            <a>Elemento 1</a>
           </li>
           <li>
-            <a>menu 2</a>
-          </li>
-          <li>
-            <a>menu 3</a>
-          </li>
-          <li>
-            <a>menu 4</a>
+            <a>Elemento 2</a>
           </li>
         </ul>
       </div>
