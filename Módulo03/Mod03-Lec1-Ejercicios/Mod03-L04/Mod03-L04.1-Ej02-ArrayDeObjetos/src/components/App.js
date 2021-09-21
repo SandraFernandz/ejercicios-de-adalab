@@ -10,12 +10,14 @@ const App = () => {
       completed: false,
     },
   ];
-
+  //tarea representa cada elemento del array que tiene las propiedades task y completed, y podría ser pepino
   const renderTasks = () => {
     return tasks.map((tarea, index) => {
-      if (tarea.completed === true) {
-        String.strike(tarea.task);
-      }
+      //faltaría tachar la lista con método de string
+      // if (tarea.completed === true) {
+      //   //función original String.strike();
+      //   tasks.task.strike();
+      // }
 
       console.log(tarea);
       return <li key={index}>Tengo que {tarea.task}</li>;
