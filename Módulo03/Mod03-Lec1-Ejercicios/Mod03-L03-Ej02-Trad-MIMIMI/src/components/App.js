@@ -2,17 +2,22 @@ import '../styles/App.scss';
 import { useState } from 'react';
 
 function App() {
-  const handleChange = () => {};
+  const [text, setText] = useState('');
+
+  const handleChange = (ev) => {
+    const inputValue = ev.target.value;
+    setText(inputValue);
+  };
+
   return (
     <div>
-      return (
       <form>
-        <label>
-          Essay:
-          <textarea value="" onChange={handleChange} />
+        <label htmlFor="text">
+          Texto:
+          <textarea id="text" value={text} onChange={handleChange} />
         </label>
-        <input type="submit" value="Submit" />
       </form>
+      <p>{text}</p>
     </div>
   );
 }
