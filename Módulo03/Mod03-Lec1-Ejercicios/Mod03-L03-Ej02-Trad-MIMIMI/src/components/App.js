@@ -8,16 +8,20 @@ function App() {
     const inputValue = ev.target.value;
     setText(inputValue);
   };
+  const convertToIs = () => {
+    const inputValue = text;
+    return inputValue.replace(/[aeou]/gi, 'i');
+  };
 
   return (
     <div>
       <form>
         <label htmlFor="text">
           Texto:
-          <textarea id="text" value={text} onChange={handleChange} />
+          <textarea id="text" onChange={handleChange} />
         </label>
       </form>
-      <p>{text}</p>
+      <p>{convertToIs()}</p>
     </div>
   );
 }

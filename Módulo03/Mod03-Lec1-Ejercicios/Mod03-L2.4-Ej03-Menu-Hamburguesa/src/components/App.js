@@ -33,10 +33,10 @@ const App = () => {
         </button>
         <ul>
           <li>
-            <a>Elemento 1</a>
+            <a>Ejemplo</a>
           </li>
           <li>
-            <a>Elemento 2</a>
+            <a>Ejemplo</a>
           </li>
         </ul>
       </div>
