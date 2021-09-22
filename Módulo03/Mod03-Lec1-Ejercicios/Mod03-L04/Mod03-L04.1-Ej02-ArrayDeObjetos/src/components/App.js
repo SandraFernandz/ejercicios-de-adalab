@@ -1,7 +1,7 @@
 import '../styles/App.scss';
-
+import { useState } from 'react';
 const App = () => {
-  const tasks = [
+  const [tasks, setTasks] = useState([
     { task: 'Comprar harina, jamón y pan rallado', completed: true },
     { task: 'Hacer croquetas ricas', completed: true },
     { task: 'Ir a la puerta de un gimnasio', completed: false },
@@ -9,18 +9,35 @@ const App = () => {
       task: 'Comerme las croquetas mirando a la gente que entra en el gimnasio',
       completed: false,
     },
-  ];
+  ]);
+
+  const handleClick = (ev) => {
+    const listClicked = ev.currentTarget.id;
+    //console.log(listClicked);
+    tasks[listClicked].completed = !tasks[listClicked].completed;
+    setTasks([...tasks]);
+  };
   //tarea representa cada elemento del array que tiene las propiedades task y completed, y podría ser pepino
   const renderTasks = () => {
     return tasks.map((tarea, index) => {
+      console.log(tarea);
       //faltaría tachar la lista con método de string
       // if (tarea.completed === true) {
       //   //función original String.strike();
       //   tasks.task.strike();
       // }
 
-      console.log(tarea);
-      return <li key={index}>Tengo que {tarea.task}</li>;
+      //console.log(tarea);
+      return (
+        <li
+          className={tarea.completed ? 'lineThrough' : ''}
+          key={index}
+          onClick={handleClick}
+          id={index}
+        >
+          Tengo que {tarea.task}
+        </li>
+      );
     });
   };
 
