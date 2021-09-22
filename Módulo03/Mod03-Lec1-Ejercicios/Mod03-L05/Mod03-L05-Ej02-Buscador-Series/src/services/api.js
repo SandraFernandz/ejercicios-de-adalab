@@ -11,7 +11,7 @@ const callToApi = (searchSeries) => {
 
       const result = response.results.map((serie) => {
         return {
-          name: serie.name,
+          name: serie.show.name,
         };
       });
       return result;

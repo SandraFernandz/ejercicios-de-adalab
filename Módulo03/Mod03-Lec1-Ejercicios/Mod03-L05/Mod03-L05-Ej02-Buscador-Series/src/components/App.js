@@ -29,8 +29,8 @@ const App = () => {
 
   const renderSeries = () => {
     // Pintamos el listado de personajes respondido por el API
-    return series.map((serie, index) => {
-      return <li key={index}> Nombre {serie.name}</li>;
+    return series.map((serie) => {
+      return <li key={serie.show.id}> Nombre {serie.show.name}</li>;
     });
   };
 
