@@ -22,7 +22,7 @@ const writeFile = (fileName, fileContent, callback) => {
 
 readFile('./input.txt', (fileContent) => {
   const currentDate = new Date().toString();
-  const newFileContent = `${currentData}: ${fileContent}`;
+  const newFileContent = `${currentDate}: ${fileContent}`;
   writeFile('./output.txt', newFileContent, () => {
     console.log('The file has been copied');
   });
