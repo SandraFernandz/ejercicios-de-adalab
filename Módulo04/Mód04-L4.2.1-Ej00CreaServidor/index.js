@@ -1,15 +1,19 @@
-const moment = require('moment');
-const configData = require('./config-es.json');
+const express = require('express');
+const cors = require('cors');
 
-//1o Node imports file
-//2o JSON.parse()
-//3o lo convierte en un objeto así:
-// const configData ={
-//    "lang":"es-ES",
-//    "dateFormat": "dd/mm/yyyy"
-//}
+const server = express();
 
-console.log('Configuración del servidor', configData);
-console.log(`Idioma del servidor: ${configData.lang}`);
-console.log(`Formato de la fech: ${configData.dateFormat}`);
-console.log('Hoy es', moment().format(configData.dateFormat));
+server.use(cors());
+server.use(express.json());
+
+const serverPort = 3000;
+server.listen(serverPort, () => {
+  console.log(`Server listening at http://localhost:${serverPort}`);
+});
+
+server.get('/users', (req, res) => {
+  const response = {
+    users: [{ name: 'Sofía' }, { name: 'María' }],
+  };
+  res.json(response);
+});
